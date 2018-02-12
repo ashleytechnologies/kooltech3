@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90978323-205D-4601-A20E-32ECB7A1A315}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>inventory</RootNamespace>
+    <AssemblyName>inventory</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>inventory.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MessagingToolkit.Barcode, Version=1.8.3.0, Culture=neutral, PublicKeyToken=4d44dd7196d3c1ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Melisha\Desktop\Barcode_Scanner_Generator_C_Sharp\Barcode_Scanner_Generator_C_Sharp\bin\Debug\MessagingToolkit.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bill.cs" />
+    <Compile Include="connection.cs" />
+    <Compile Include="frmBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBarcode.Designer.cs">
+      <DependentUpon>frmBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBilling.Designer.cs">
+      <DependentUpon>frmBilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditSettlement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditSettlement.Designer.cs">
+      <DependentUpon>frmCreditSettlement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGoodsReceived.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoodsReceived.Designer.cs">
+      <DependentUpon>frmGoodsReceived.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayments.Designer.cs">
+      <DependentUpon>frmPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuppliers.Designer.cs">
+      <DependentUpon>frmSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDebtors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDebtors.Designer.cs">
+      <DependentUpon>frmDebtors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGoodsReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoodsReturn.Designer.cs">
+      <DependentUpon>frmGoodsReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomers.Designer.cs">
+      <DependentUpon>frmCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduct.Designer.cs">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoice.Designer.cs">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceCancellation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceCancellation.Designer.cs">
+      <DependentUpon>frmInvoiceCancellation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReceipts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReceipts.Designer.cs">
+      <DependentUpon>frmReceipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesReports.Designer.cs">
+      <DependentUpon>frmSalesReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesReturn.Designer.cs">
+      <DependentUpon>frmSalesReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStock.Designer.cs">
+      <DependentUpon>frmStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockAdjustment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockAdjustment.Designer.cs">
+      <DependentUpon>frmStockAdjustment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBarcode.resx">
+      <DependentUpon>frmBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBilling.resx">
+      <DependentUpon>frmBilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreditSettlement.resx">
+      <DependentUpon>frmCreditSettlement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGoodsReceived.resx">
+      <DependentUpon>frmGoodsReceived.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayments.resx">
+      <DependentUpon>frmPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuppliers.resx">
+      <DependentUpon>frmSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDebtors.resx">
+      <DependentUpon>frmDebtors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGoodsReturn.resx">
+      <DependentUpon>frmGoodsReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomers.resx">
+      <DependentUpon>frmCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduct.resx">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoice.resx">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceCancellation.resx">
+      <DependentUpon>frmInvoiceCancellation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReceipts.resx">
+      <DependentUpon>frmReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalesReports.resx">
+      <DependentUpon>frmSalesReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalesReturn.resx">
+      <DependentUpon>frmSalesReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStock.resx">
+      <DependentUpon>frmStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockAdjustment.resx">
+      <DependentUpon>frmStockAdjustment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\inventory.frmAddEditProduct.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmAddEditStaff.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmAddProductQuick.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmBarcode.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmBilling.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmCreditSettlement.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmCustomers.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmDebtors.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmGoodsReceived.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmGoodsReturn.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmHome.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmImportProduct.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmInvoice.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmInvoiceCancellation.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmListCategory.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmListofTransactions.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmListProduct.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmListProductStocksIn.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmListReturns.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmListStaff.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmLogin.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmMain.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmPayments.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmProduct.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmReceipts.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmReports.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmSalesReports.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmSalesReturn.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmSelectCategory.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmStock.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmStockAdjustment.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.frmSuppliers.resources" />
+    <EmbeddedResource Include="obj\Debug\inventory.Properties.Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include=".vs\inventory\v14\.suo" />
+    <None Include=".vs\inventory\v15\.suo" />
+    <None Include=".vs\inventory\v15\Server\sqlite3\db.lock" />
+    <None Include=".vs\inventory\v15\Server\sqlite3\storage.ide" />
+    <None Include=".vs\inventory\v15\Server\sqlite3\storage.ide-shm" />
+    <None Include=".vs\inventory\v15\Server\sqlite3\storage.ide-wal" />
+    <None Include="app.config" />
+    <None Include="bin\Debug\inventory.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\inventory.csproj.CopyComplete" />
+    <None Include="obj\Debug\inventory.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\inventory.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\inventory.csprojResolveAssemblyReference.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\inventory.exe" />
+    <Content Include="bin\Debug\inventory.pdb" />
+    <Content Include="bin\Debug\inventory.vshost.exe" />
+    <Content Include="bin\Debug\MessagingToolkit.Barcode.dll" />
+    <Content Include="bin\Debug\MySql.Data.dll" />
+    <Content Include="bin\Debug\MySql.Data.Entity.dll" />
+    <Content Include="bin\Debug\MySql.Data.Entity.EF6.dll" />
+    <Content Include="images\cc.png" />
+    <Content Include="images\ccc.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\login-w-icon.png" />
+    <Content Include="images\login.png" />
+    <Content Include="images\max.png" />
+    <Content Include="images\maxmm.png" />
+    <Content Include="images\mini.png" />
+    <Content Include="images\minimize.png" />
+    <Content Include="images\minimm.png" />
+    <Content Include="obj\Debug\inventory.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\inventory.exe" />
+    <Content Include="obj\Debug\inventory.pdb" />
+    <Content Include="obj\Debug\TempPE\inventorydbDataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\inventorydbDataSet1.Designer.cs.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
