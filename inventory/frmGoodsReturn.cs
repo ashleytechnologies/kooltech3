@@ -32,5 +32,12 @@ namespace inventory
             frmGoodsReturn gr = new frmGoodsReturn();
             gr.ShowDialog();
         }
+
+        private void frmGoodsReturn_Load(object sender, EventArgs e)
+        {
+            lblDate.Text = DateTime.Now.ToString();
+            this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+            this.Location = new Point(0, 0);
+        }
     }
 }

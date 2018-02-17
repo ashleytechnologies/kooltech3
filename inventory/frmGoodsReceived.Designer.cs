@@ -30,6 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGoodsReceived));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.txtNewCost = new System.Windows.Forms.TextBox();
+            this.txtDis = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtStock = new System.Windows.Forms.TextBox();
+            this.txtProduct = new System.Windows.Forms.TextBox();
             this.txtSupplierInvoice = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtInvoiceNo = new System.Windows.Forms.TextBox();
@@ -112,19 +125,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.lblGrossAmount = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtProduct = new System.Windows.Forms.TextBox();
-            this.txtStock = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.txtDis = new System.Windows.Forms.TextBox();
-            this.txtNewCost = new System.Windows.Forms.TextBox();
-            this.txtQuantity = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -160,15 +160,133 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(4, 166);
-            this.panel1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(814, 154);
             this.panel1.TabIndex = 40;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(266, 128);
+            this.label15.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(65, 13);
+            this.label15.TabIndex = 56;
+            this.label15.Text = "Selling Price";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(659, 78);
+            this.label14.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(46, 13);
+            this.label14.TabIndex = 55;
+            this.label14.Text = "Qunatity";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(528, 78);
+            this.label13.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(53, 13);
+            this.label13.TabIndex = 54;
+            this.label13.Text = "New Cost";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(397, 78);
+            this.label12.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(33, 13);
+            this.label12.TabIndex = 53;
+            this.label12.Text = "Dis %";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(266, 78);
+            this.label10.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(61, 13);
+            this.label10.TabIndex = 52;
+            this.label10.Text = "Cost Price :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(135, 78);
+            this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.TabIndex = 51;
+            this.label8.Text = "Stock";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(8, 78);
+            this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 13);
+            this.label6.TabIndex = 50;
+            this.label6.Text = "Product";
+            // 
+            // txtQuantity
+            // 
+            this.txtQuantity.Location = new System.Drawing.Point(662, 107);
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(1);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(129, 20);
+            this.txtQuantity.TabIndex = 49;
+            // 
+            // txtNewCost
+            // 
+            this.txtNewCost.Location = new System.Drawing.Point(531, 107);
+            this.txtNewCost.Margin = new System.Windows.Forms.Padding(1);
+            this.txtNewCost.Name = "txtNewCost";
+            this.txtNewCost.Size = new System.Drawing.Size(129, 20);
+            this.txtNewCost.TabIndex = 48;
+            // 
+            // txtDis
+            // 
+            this.txtDis.Location = new System.Drawing.Point(400, 107);
+            this.txtDis.Margin = new System.Windows.Forms.Padding(1);
+            this.txtDis.Name = "txtDis";
+            this.txtDis.Size = new System.Drawing.Size(129, 20);
+            this.txtDis.TabIndex = 47;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(269, 107);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(1);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(129, 20);
+            this.textBox3.TabIndex = 46;
+            // 
+            // txtStock
+            // 
+            this.txtStock.Location = new System.Drawing.Point(138, 107);
+            this.txtStock.Margin = new System.Windows.Forms.Padding(1);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(129, 20);
+            this.txtStock.TabIndex = 45;
+            // 
+            // txtProduct
+            // 
+            this.txtProduct.Location = new System.Drawing.Point(7, 107);
+            this.txtProduct.Margin = new System.Windows.Forms.Padding(1);
+            this.txtProduct.Name = "txtProduct";
+            this.txtProduct.Size = new System.Drawing.Size(129, 20);
+            this.txtProduct.TabIndex = 44;
+            // 
             // txtSupplierInvoice
             // 
             this.txtSupplierInvoice.Location = new System.Drawing.Point(592, 47);
-            this.txtSupplierInvoice.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtSupplierInvoice.Margin = new System.Windows.Forms.Padding(1);
             this.txtSupplierInvoice.Name = "txtSupplierInvoice";
             this.txtSupplierInvoice.Size = new System.Drawing.Size(129, 20);
             this.txtSupplierInvoice.TabIndex = 43;
@@ -179,14 +297,14 @@
             this.label4.Location = new System.Drawing.Point(492, 50);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 15);
+            this.label4.Size = new System.Drawing.Size(89, 13);
             this.label4.TabIndex = 42;
             this.label4.Text = "Supplier Invoice :";
             // 
             // txtInvoiceNo
             // 
             this.txtInvoiceNo.Location = new System.Drawing.Point(112, 46);
-            this.txtInvoiceNo.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtInvoiceNo.Margin = new System.Windows.Forms.Padding(1);
             this.txtInvoiceNo.Name = "txtInvoiceNo";
             this.txtInvoiceNo.Size = new System.Drawing.Size(129, 20);
             this.txtInvoiceNo.TabIndex = 41;
@@ -194,7 +312,7 @@
             // txtReceivedNo
             // 
             this.txtReceivedNo.Location = new System.Drawing.Point(112, 15);
-            this.txtReceivedNo.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtReceivedNo.Margin = new System.Windows.Forms.Padding(1);
             this.txtReceivedNo.Name = "txtReceivedNo";
             this.txtReceivedNo.Size = new System.Drawing.Size(129, 20);
             this.txtReceivedNo.TabIndex = 40;
@@ -202,7 +320,7 @@
             // txtSupplier
             // 
             this.txtSupplier.Location = new System.Drawing.Point(592, 15);
-            this.txtSupplier.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtSupplier.Margin = new System.Windows.Forms.Padding(1);
             this.txtSupplier.Name = "txtSupplier";
             this.txtSupplier.Size = new System.Drawing.Size(129, 20);
             this.txtSupplier.TabIndex = 39;
@@ -213,7 +331,7 @@
             this.label3.Location = new System.Drawing.Point(492, 17);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 15);
+            this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 38;
             this.label3.Text = "Supplier :";
             // 
@@ -223,7 +341,7 @@
             this.lblLastReceivedInv.Location = new System.Drawing.Point(401, 17);
             this.lblLastReceivedInv.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblLastReceivedInv.Name = "lblLastReceivedInv";
-            this.lblLastReceivedInv.Size = new System.Drawing.Size(43, 15);
+            this.lblLastReceivedInv.Size = new System.Drawing.Size(39, 13);
             this.lblLastReceivedInv.TabIndex = 36;
             this.lblLastReceivedInv.Text = "inv000";
             // 
@@ -233,7 +351,7 @@
             this.label5.Location = new System.Drawing.Point(287, 17);
             this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 15);
+            this.label5.Size = new System.Drawing.Size(102, 13);
             this.label5.TabIndex = 31;
             this.label5.Text = "Last Received No. :";
             // 
@@ -243,7 +361,7 @@
             this.label2.Location = new System.Drawing.Point(17, 49);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 15);
+            this.label2.Size = new System.Drawing.Size(68, 13);
             this.label2.TabIndex = 28;
             this.label2.Text = "Invoice No. :";
             // 
@@ -253,7 +371,7 @@
             this.label1.Location = new System.Drawing.Point(17, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 15);
+            this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 27;
             this.label1.Text = "Received No. :";
             // 
@@ -326,25 +444,25 @@
             // debtorsToolStripMenuItem
             // 
             this.debtorsToolStripMenuItem.Name = "debtorsToolStripMenuItem";
-            this.debtorsToolStripMenuItem.Size = new System.Drawing.Size(147, 24);
+            this.debtorsToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.debtorsToolStripMenuItem.Text = "Debtors";
             // 
             // purchasingToolStripMenuItem
             // 
             this.purchasingToolStripMenuItem.Name = "purchasingToolStripMenuItem";
-            this.purchasingToolStripMenuItem.Size = new System.Drawing.Size(147, 24);
+            this.purchasingToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.purchasingToolStripMenuItem.Text = "Purchasing";
             // 
             // salesToolStripMenuItem
             // 
             this.salesToolStripMenuItem.Name = "salesToolStripMenuItem";
-            this.salesToolStripMenuItem.Size = new System.Drawing.Size(147, 24);
+            this.salesToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.salesToolStripMenuItem.Text = "Sales";
             // 
             // stockToolStripMenuItem1
             // 
             this.stockToolStripMenuItem1.Name = "stockToolStripMenuItem1";
-            this.stockToolStripMenuItem1.Size = new System.Drawing.Size(147, 24);
+            this.stockToolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
             this.stockToolStripMenuItem1.Text = "Stock";
             // 
             // lblDate
@@ -353,7 +471,7 @@
             this.lblDate.Location = new System.Drawing.Point(105, 142);
             this.lblDate.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(41, 15);
+            this.lblDate.Size = new System.Drawing.Size(35, 13);
             this.lblDate.TabIndex = 39;
             this.lblDate.Text = "label1";
             // 
@@ -369,7 +487,7 @@
             this.DisVal,
             this.Amount});
             this.dataGridView1.Location = new System.Drawing.Point(0, 322);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 40;
             this.dataGridView1.Size = new System.Drawing.Size(741, 321);
@@ -425,7 +543,7 @@
             this.purchasingToolStripMenuItem,
             this.debtorsToolStripMenuItem});
             this.reportsToolStripMenuItem2.Name = "reportsToolStripMenuItem2";
-            this.reportsToolStripMenuItem2.Size = new System.Drawing.Size(68, 23);
+            this.reportsToolStripMenuItem2.Size = new System.Drawing.Size(59, 20);
             this.reportsToolStripMenuItem2.Text = "Reports";
             // 
             // label9
@@ -434,38 +552,38 @@
             this.label9.Location = new System.Drawing.Point(12, 142);
             this.label9.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 15);
+            this.label9.Size = new System.Drawing.Size(80, 13);
             this.label9.TabIndex = 41;
             this.label9.Text = "Date and Time:";
             // 
             // securityToolStripMenuItem
             // 
             this.securityToolStripMenuItem.Name = "securityToolStripMenuItem";
-            this.securityToolStripMenuItem.Size = new System.Drawing.Size(69, 23);
+            this.securityToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.securityToolStripMenuItem.Text = "Security";
             // 
             // purchaseOrderToolStripMenuItem
             // 
             this.purchaseOrderToolStripMenuItem.Name = "purchaseOrderToolStripMenuItem";
-            this.purchaseOrderToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.purchaseOrderToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.purchaseOrderToolStripMenuItem.Text = "Purchase Order";
             // 
             // additionDeductionOfIssuesToolStripMenuItem
             // 
             this.additionDeductionOfIssuesToolStripMenuItem.Name = "additionDeductionOfIssuesToolStripMenuItem";
-            this.additionDeductionOfIssuesToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.additionDeductionOfIssuesToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.additionDeductionOfIssuesToolStripMenuItem.Text = "Addition/ Deduction of Issues";
             // 
             // goodsReceivedToolStripMenuItem
             // 
             this.goodsReceivedToolStripMenuItem.Name = "goodsReceivedToolStripMenuItem";
-            this.goodsReceivedToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.goodsReceivedToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.goodsReceivedToolStripMenuItem.Text = "Goods Received";
             // 
             // siteIssuesToolStripMenuItem
             // 
             this.siteIssuesToolStripMenuItem.Name = "siteIssuesToolStripMenuItem";
-            this.siteIssuesToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.siteIssuesToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.siteIssuesToolStripMenuItem.Text = "Site Issues";
             // 
             // transactionsToolStripMenuItem
@@ -483,109 +601,109 @@
             this.stockEntryVerificationToolStripMenuItem,
             this.stockTransferNoteToolStripMenuItem});
             this.transactionsToolStripMenuItem.Name = "transactionsToolStripMenuItem";
-            this.transactionsToolStripMenuItem.Size = new System.Drawing.Size(96, 23);
+            this.transactionsToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.transactionsToolStripMenuItem.Text = "Transactions";
             // 
             // goodsReturnToolStripMenuItem
             // 
             this.goodsReturnToolStripMenuItem.Name = "goodsReturnToolStripMenuItem";
-            this.goodsReturnToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.goodsReturnToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.goodsReturnToolStripMenuItem.Text = "Goods Return";
             // 
             // stockCountIntializingToolStripMenuItem
             // 
             this.stockCountIntializingToolStripMenuItem.Name = "stockCountIntializingToolStripMenuItem";
-            this.stockCountIntializingToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.stockCountIntializingToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.stockCountIntializingToolStripMenuItem.Text = "Stock Count Intializing";
             // 
             // stockTakingToolStripMenuItem
             // 
             this.stockTakingToolStripMenuItem.Name = "stockTakingToolStripMenuItem";
-            this.stockTakingToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.stockTakingToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.stockTakingToolStripMenuItem.Text = "Stock Taking";
             // 
             // stockTakingProcessingToolStripMenuItem
             // 
             this.stockTakingProcessingToolStripMenuItem.Name = "stockTakingProcessingToolStripMenuItem";
-            this.stockTakingProcessingToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.stockTakingProcessingToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.stockTakingProcessingToolStripMenuItem.Text = "Stock Taking Processing";
             // 
             // quickStockAdjustmentToolStripMenuItem
             // 
             this.quickStockAdjustmentToolStripMenuItem.Name = "quickStockAdjustmentToolStripMenuItem";
-            this.quickStockAdjustmentToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.quickStockAdjustmentToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.quickStockAdjustmentToolStripMenuItem.Text = "Quick Stock Adjustment";
             // 
             // stockEntryVerificationToolStripMenuItem
             // 
             this.stockEntryVerificationToolStripMenuItem.Name = "stockEntryVerificationToolStripMenuItem";
-            this.stockEntryVerificationToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.stockEntryVerificationToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.stockEntryVerificationToolStripMenuItem.Text = "Stock Entry Verification";
             // 
             // stockTransferNoteToolStripMenuItem
             // 
             this.stockTransferNoteToolStripMenuItem.Name = "stockTransferNoteToolStripMenuItem";
-            this.stockTransferNoteToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.stockTransferNoteToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.stockTransferNoteToolStripMenuItem.Text = "Stock Transfer Note";
             // 
             // currencyToolStripMenuItem
             // 
             this.currencyToolStripMenuItem.Name = "currencyToolStripMenuItem";
-            this.currencyToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.currencyToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.currencyToolStripMenuItem.Text = "Currency";
             // 
             // expensesToolStripMenuItem
             // 
             this.expensesToolStripMenuItem.Name = "expensesToolStripMenuItem";
-            this.expensesToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.expensesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.expensesToolStripMenuItem.Text = "Expenses";
             // 
             // locationsToolStripMenuItem
             // 
             this.locationsToolStripMenuItem.Name = "locationsToolStripMenuItem";
-            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.locationsToolStripMenuItem.Text = "Locations";
             // 
             // suppliersToolStripMenuItem
             // 
             this.suppliersToolStripMenuItem.Name = "suppliersToolStripMenuItem";
-            this.suppliersToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.suppliersToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.suppliersToolStripMenuItem.Text = "Suppliers";
             // 
             // projectsToolStripMenuItem
             // 
             this.projectsToolStripMenuItem.Name = "projectsToolStripMenuItem";
-            this.projectsToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.projectsToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.projectsToolStripMenuItem.Text = "Projects";
             // 
             // productDetailsToolStripMenuItem
             // 
             this.productDetailsToolStripMenuItem.Name = "productDetailsToolStripMenuItem";
-            this.productDetailsToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.productDetailsToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.productDetailsToolStripMenuItem.Text = "Product Details";
             // 
             // customerToolStripMenuItem
             // 
             this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.customerToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.customerToolStripMenuItem.Text = "Customer";
             // 
             // brandToolStripMenuItem
             // 
             this.brandToolStripMenuItem.Name = "brandToolStripMenuItem";
-            this.brandToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.brandToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.brandToolStripMenuItem.Text = "Brand";
             // 
             // bankToolStripMenuItem
             // 
             this.bankToolStripMenuItem.Name = "bankToolStripMenuItem";
-            this.bankToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.bankToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.bankToolStripMenuItem.Text = "Bank";
             // 
             // assistantToolStripMenuItem
             // 
             this.assistantToolStripMenuItem.Name = "assistantToolStripMenuItem";
-            this.assistantToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.assistantToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.assistantToolStripMenuItem.Text = "Assistant";
             // 
             // referencesToolStripMenuItem
@@ -602,7 +720,7 @@
             this.expensesToolStripMenuItem,
             this.currencyToolStripMenuItem});
             this.referencesToolStripMenuItem.Name = "referencesToolStripMenuItem";
-            this.referencesToolStripMenuItem.Size = new System.Drawing.Size(86, 23);
+            this.referencesToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
             this.referencesToolStripMenuItem.Text = "References";
             // 
             // menuStrip1
@@ -619,7 +737,7 @@
             this.reportsToolStripMenuItem2});
             this.menuStrip1.Location = new System.Drawing.Point(0, 55);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(506, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(448, 24);
             this.menuStrip1.TabIndex = 30;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -633,43 +751,43 @@
             this.invoiceCancellationToolStripMenuItem,
             this.quotationToolStripMenuItem});
             this.salesMainToolStripMenuItem.Name = "salesMainToolStripMenuItem";
-            this.salesMainToolStripMenuItem.Size = new System.Drawing.Size(51, 23);
+            this.salesMainToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.salesMainToolStripMenuItem.Text = "Sales";
             // 
             // invoiceToolStripMenuItem
             // 
             this.invoiceToolStripMenuItem.Name = "invoiceToolStripMenuItem";
-            this.invoiceToolStripMenuItem.Size = new System.Drawing.Size(321, 24);
+            this.invoiceToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
             this.invoiceToolStripMenuItem.Text = "Invoice";
             // 
             // salesReturnToolStripMenuItem
             // 
             this.salesReturnToolStripMenuItem.Name = "salesReturnToolStripMenuItem";
-            this.salesReturnToolStripMenuItem.Size = new System.Drawing.Size(321, 24);
+            this.salesReturnToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
             this.salesReturnToolStripMenuItem.Text = "Sales Return";
             // 
             // advanceInvoiceToolStripMenuItem
             // 
             this.advanceInvoiceToolStripMenuItem.Name = "advanceInvoiceToolStripMenuItem";
-            this.advanceInvoiceToolStripMenuItem.Size = new System.Drawing.Size(321, 24);
+            this.advanceInvoiceToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
             this.advanceInvoiceToolStripMenuItem.Text = "Advance Invoice";
             // 
             // advanceQuotationInvoiceSettlementToolStripMenuItem
             // 
             this.advanceQuotationInvoiceSettlementToolStripMenuItem.Name = "advanceQuotationInvoiceSettlementToolStripMenuItem";
-            this.advanceQuotationInvoiceSettlementToolStripMenuItem.Size = new System.Drawing.Size(321, 24);
+            this.advanceQuotationInvoiceSettlementToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
             this.advanceQuotationInvoiceSettlementToolStripMenuItem.Text = "Advance/ Quotation Invoice Settlement";
             // 
             // invoiceCancellationToolStripMenuItem
             // 
             this.invoiceCancellationToolStripMenuItem.Name = "invoiceCancellationToolStripMenuItem";
-            this.invoiceCancellationToolStripMenuItem.Size = new System.Drawing.Size(321, 24);
+            this.invoiceCancellationToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
             this.invoiceCancellationToolStripMenuItem.Text = "Invoice Cancellation";
             // 
             // quotationToolStripMenuItem
             // 
             this.quotationToolStripMenuItem.Name = "quotationToolStripMenuItem";
-            this.quotationToolStripMenuItem.Size = new System.Drawing.Size(321, 24);
+            this.quotationToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
             this.quotationToolStripMenuItem.Text = "Quotation";
             // 
             // accountToolStripMenuItem
@@ -679,25 +797,25 @@
             this.creditSettlementToolStripMenuItem,
             this.returnedChequesToolStripMenuItem});
             this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
-            this.accountToolStripMenuItem.Size = new System.Drawing.Size(71, 23);
+            this.accountToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.accountToolStripMenuItem.Text = "Account";
             // 
             // receiptsToolStripMenuItem
             // 
             this.receiptsToolStripMenuItem.Name = "receiptsToolStripMenuItem";
-            this.receiptsToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
+            this.receiptsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.receiptsToolStripMenuItem.Text = "Receipts";
             // 
             // creditSettlementToolStripMenuItem
             // 
             this.creditSettlementToolStripMenuItem.Name = "creditSettlementToolStripMenuItem";
-            this.creditSettlementToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
+            this.creditSettlementToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.creditSettlementToolStripMenuItem.Text = "Credit Settlement";
             // 
             // returnedChequesToolStripMenuItem
             // 
             this.returnedChequesToolStripMenuItem.Name = "returnedChequesToolStripMenuItem";
-            this.returnedChequesToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
+            this.returnedChequesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.returnedChequesToolStripMenuItem.Text = "Returned Cheques";
             // 
             // utilityToolStripMenuItem
@@ -706,19 +824,19 @@
             this.backupDatabaseToolStripMenuItem,
             this.barcodePrintingToolStripMenuItem});
             this.utilityToolStripMenuItem.Name = "utilityToolStripMenuItem";
-            this.utilityToolStripMenuItem.Size = new System.Drawing.Size(57, 23);
+            this.utilityToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.utilityToolStripMenuItem.Text = "Utility";
             // 
             // backupDatabaseToolStripMenuItem
             // 
             this.backupDatabaseToolStripMenuItem.Name = "backupDatabaseToolStripMenuItem";
-            this.backupDatabaseToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
+            this.backupDatabaseToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.backupDatabaseToolStripMenuItem.Text = "Backup Database";
             // 
             // barcodePrintingToolStripMenuItem
             // 
             this.barcodePrintingToolStripMenuItem.Name = "barcodePrintingToolStripMenuItem";
-            this.barcodePrintingToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
+            this.barcodePrintingToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.barcodePrintingToolStripMenuItem.Text = "Barcode Printing";
             // 
             // panel2
@@ -741,7 +859,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(1129, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 22);
             this.pictureBox1.TabIndex = 6;
@@ -754,7 +872,7 @@
             this.btnCloseIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCloseIcon.BackgroundImage")));
             this.btnCloseIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCloseIcon.Location = new System.Drawing.Point(1151, 9);
-            this.btnCloseIcon.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnCloseIcon.Margin = new System.Windows.Forms.Padding(1);
             this.btnCloseIcon.Name = "btnCloseIcon";
             this.btnCloseIcon.Size = new System.Drawing.Size(20, 22);
             this.btnCloseIcon.TabIndex = 5;
@@ -767,7 +885,7 @@
             this.btnMinimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimize.BackgroundImage")));
             this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMinimize.Location = new System.Drawing.Point(1106, 9);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(1);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(20, 22);
             this.btnMinimize.TabIndex = 3;
@@ -780,7 +898,7 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(6, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(239, 30);
+            this.lblTitle.Size = new System.Drawing.Size(216, 25);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Inventory Management";
             // 
@@ -791,7 +909,7 @@
             this.lblGRNTotal.Location = new System.Drawing.Point(575, 661);
             this.lblGRNTotal.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblGRNTotal.Name = "lblGRNTotal";
-            this.lblGRNTotal.Size = new System.Drawing.Size(31, 15);
+            this.lblGRNTotal.Size = new System.Drawing.Size(28, 13);
             this.lblGRNTotal.TabIndex = 65;
             this.lblGRNTotal.Text = "0.00";
             // 
@@ -802,7 +920,7 @@
             this.label17.Location = new System.Drawing.Point(470, 661);
             this.label17.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(70, 15);
+            this.label17.Size = new System.Drawing.Size(64, 13);
             this.label17.TabIndex = 64;
             this.label17.Text = "GRN Total :";
             // 
@@ -813,7 +931,7 @@
             this.lblDiscount.Location = new System.Drawing.Point(345, 661);
             this.lblDiscount.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblDiscount.Name = "lblDiscount";
-            this.lblDiscount.Size = new System.Drawing.Size(31, 15);
+            this.lblDiscount.Size = new System.Drawing.Size(28, 13);
             this.lblDiscount.TabIndex = 63;
             this.lblDiscount.Text = "0.00";
             // 
@@ -824,7 +942,7 @@
             this.label11.Location = new System.Drawing.Point(231, 661);
             this.label11.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(61, 15);
+            this.label11.Size = new System.Drawing.Size(55, 13);
             this.label11.TabIndex = 62;
             this.label11.Text = "Discount :";
             // 
@@ -835,7 +953,7 @@
             this.lblGrossAmount.Location = new System.Drawing.Point(115, 661);
             this.lblGrossAmount.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblGrossAmount.Name = "lblGrossAmount";
-            this.lblGrossAmount.Size = new System.Drawing.Size(31, 15);
+            this.lblGrossAmount.Size = new System.Drawing.Size(28, 13);
             this.lblGrossAmount.TabIndex = 59;
             this.lblGrossAmount.Text = "0.00";
             // 
@@ -846,127 +964,9 @@
             this.label7.Location = new System.Drawing.Point(1, 661);
             this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 15);
+            this.label7.Size = new System.Drawing.Size(79, 13);
             this.label7.TabIndex = 58;
             this.label7.Text = "Gross Amount :";
-            // 
-            // txtProduct
-            // 
-            this.txtProduct.Location = new System.Drawing.Point(7, 107);
-            this.txtProduct.Margin = new System.Windows.Forms.Padding(1);
-            this.txtProduct.Name = "txtProduct";
-            this.txtProduct.Size = new System.Drawing.Size(129, 20);
-            this.txtProduct.TabIndex = 44;
-            // 
-            // txtStock
-            // 
-            this.txtStock.Location = new System.Drawing.Point(138, 107);
-            this.txtStock.Margin = new System.Windows.Forms.Padding(1);
-            this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(129, 20);
-            this.txtStock.TabIndex = 45;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(269, 107);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(1);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(129, 20);
-            this.textBox3.TabIndex = 46;
-            // 
-            // txtDis
-            // 
-            this.txtDis.Location = new System.Drawing.Point(400, 107);
-            this.txtDis.Margin = new System.Windows.Forms.Padding(1);
-            this.txtDis.Name = "txtDis";
-            this.txtDis.Size = new System.Drawing.Size(129, 20);
-            this.txtDis.TabIndex = 47;
-            // 
-            // txtNewCost
-            // 
-            this.txtNewCost.Location = new System.Drawing.Point(531, 107);
-            this.txtNewCost.Margin = new System.Windows.Forms.Padding(1);
-            this.txtNewCost.Name = "txtNewCost";
-            this.txtNewCost.Size = new System.Drawing.Size(129, 20);
-            this.txtNewCost.TabIndex = 48;
-            // 
-            // txtQuantity
-            // 
-            this.txtQuantity.Location = new System.Drawing.Point(662, 107);
-            this.txtQuantity.Margin = new System.Windows.Forms.Padding(1);
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(129, 20);
-            this.txtQuantity.TabIndex = 49;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 78);
-            this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 15);
-            this.label6.TabIndex = 50;
-            this.label6.Text = "Product";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(135, 78);
-            this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 15);
-            this.label8.TabIndex = 51;
-            this.label8.Text = "Stock";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(266, 78);
-            this.label10.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 15);
-            this.label10.TabIndex = 52;
-            this.label10.Text = "Cost Price :";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(397, 78);
-            this.label12.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(39, 15);
-            this.label12.TabIndex = 53;
-            this.label12.Text = "Dis %";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(528, 78);
-            this.label13.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(59, 15);
-            this.label13.TabIndex = 54;
-            this.label13.Text = "New Cost";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(659, 78);
-            this.label14.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 15);
-            this.label14.TabIndex = 55;
-            this.label14.Text = "Qunatity";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(266, 128);
-            this.label15.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(76, 15);
-            this.label15.TabIndex = 56;
-            this.label15.Text = "Selling Price";
             // 
             // frmGoodsReceived
             // 
@@ -994,9 +994,10 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "frmGoodsReceived";
             this.Text = "frmInvoiceCancellation";
+            this.Load += new System.EventHandler(this.frmGoodsReceived_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

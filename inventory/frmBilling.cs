@@ -1,6 +1,7 @@
 ﻿using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data;
+using System.Drawing;
 
 namespace inventory
 {
@@ -73,6 +74,8 @@ namespace inventory
 
         private void frmBilling_Load(object sender, System.EventArgs e)
         {
+            this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+            this.Location = new Point(0, 0);
             generateInvoiceID();
             generateCustomerID();
         }

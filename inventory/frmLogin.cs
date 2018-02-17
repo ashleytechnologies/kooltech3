@@ -35,5 +35,11 @@ namespace inventory
         }
 
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+            this.Location = new Point(0, 0);
+        }
     }
 }

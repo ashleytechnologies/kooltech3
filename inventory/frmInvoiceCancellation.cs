@@ -51,5 +51,12 @@ namespace inventory
                 MessageBox.Show("An Error Occured.");
             }
         }
+
+        private void frmInvoiceCancellation_Load(object sender, EventArgs e)
+        {
+            lblDate.Text = DateTime.Now.ToString();
+            this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+            this.Location = new Point(0, 0);
+        }
     }
 }

@@ -877,6 +877,7 @@
             this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "frmInvoiceCancellation";
             this.Text = "frmInvoiceCancellation";
+            this.Load += new System.EventHandler(this.frmInvoiceCancellation_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

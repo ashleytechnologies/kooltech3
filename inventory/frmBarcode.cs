@@ -54,5 +54,11 @@ namespace inventory
             if(OD.ShowDialog()==DialogResult.OK)
                 pictureBox1.Load(OD.FileName);
         }
+
+        private void frmBarcode_Load(object sender, EventArgs e)
+        {
+            this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+            this.Location = new Point(0, 0);
+        }
     }
 }
