@@ -134,7 +134,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(1, 166);
-            this.panel1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(745, 89);
             this.panel1.TabIndex = 40;
@@ -142,7 +142,7 @@
             // txtCustomer
             // 
             this.txtCustomer.Location = new System.Drawing.Point(469, 46);
-            this.txtCustomer.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtCustomer.Margin = new System.Windows.Forms.Padding(1);
             this.txtCustomer.Name = "txtCustomer";
             this.txtCustomer.Size = new System.Drawing.Size(225, 20);
             this.txtCustomer.TabIndex = 40;
@@ -150,7 +150,7 @@
             // txtSalesman
             // 
             this.txtSalesman.Location = new System.Drawing.Point(469, 12);
-            this.txtSalesman.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtSalesman.Margin = new System.Windows.Forms.Padding(1);
             this.txtSalesman.Name = "txtSalesman";
             this.txtSalesman.Size = new System.Drawing.Size(225, 20);
             this.txtSalesman.TabIndex = 39;
@@ -347,7 +347,7 @@
             this.DisVal,
             this.Amount});
             this.dataGridView1.Location = new System.Drawing.Point(3, 258);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 40;
             this.dataGridView1.Size = new System.Drawing.Size(743, 321);
@@ -719,7 +719,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(681, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 22);
             this.pictureBox1.TabIndex = 6;
@@ -732,11 +732,12 @@
             this.btnCloseIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCloseIcon.BackgroundImage")));
             this.btnCloseIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCloseIcon.Location = new System.Drawing.Point(703, 9);
-            this.btnCloseIcon.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnCloseIcon.Margin = new System.Windows.Forms.Padding(1);
             this.btnCloseIcon.Name = "btnCloseIcon";
             this.btnCloseIcon.Size = new System.Drawing.Size(20, 22);
             this.btnCloseIcon.TabIndex = 5;
             this.btnCloseIcon.TabStop = false;
+            this.btnCloseIcon.Click += new System.EventHandler(this.btnCloseIcon_Click);
             // 
             // btnMinimize
             // 
@@ -745,7 +746,7 @@
             this.btnMinimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimize.BackgroundImage")));
             this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMinimize.Location = new System.Drawing.Point(658, 9);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(1);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(20, 22);
             this.btnMinimize.TabIndex = 3;
@@ -848,7 +849,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "frmSalesReturn";
             this.Text = "frmSalesReturn";
             this.Load += new System.EventHandler(this.frmSalesReturn_Load);

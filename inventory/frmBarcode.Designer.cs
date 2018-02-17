@@ -153,6 +153,7 @@
             this.btnCloseIcon.Size = new System.Drawing.Size(20, 22);
             this.btnCloseIcon.TabIndex = 5;
             this.btnCloseIcon.TabStop = false;
+            this.btnCloseIcon.Click += new System.EventHandler(this.btnCloseIcon_Click);
             // 
             // btnMinimize
             // 

@@ -57,6 +57,11 @@ namespace inventory
             cmd.Parameters.AddWithValue("@itmToReturn", itmToReturn);
             cmd.ExecuteNonQuery();
         }
+
+        private void btnCloseIcon_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 

@@ -509,7 +509,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(681, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 22);
             this.pictureBox1.TabIndex = 6;
@@ -522,11 +522,12 @@
             this.btnCloseIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCloseIcon.BackgroundImage")));
             this.btnCloseIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCloseIcon.Location = new System.Drawing.Point(703, 9);
-            this.btnCloseIcon.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnCloseIcon.Margin = new System.Windows.Forms.Padding(1);
             this.btnCloseIcon.Name = "btnCloseIcon";
             this.btnCloseIcon.Size = new System.Drawing.Size(20, 22);
             this.btnCloseIcon.TabIndex = 5;
             this.btnCloseIcon.TabStop = false;
+            this.btnCloseIcon.Click += new System.EventHandler(this.btnCloseIcon_Click);
             // 
             // btnMinimize
             // 
@@ -535,7 +536,7 @@
             this.btnMinimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimize.BackgroundImage")));
             this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMinimize.Location = new System.Drawing.Point(658, 9);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(1);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(20, 22);
             this.btnMinimize.TabIndex = 3;
@@ -555,7 +556,7 @@
             // btnInvoicePayment
             // 
             this.btnInvoicePayment.Location = new System.Drawing.Point(9, 335);
-            this.btnInvoicePayment.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnInvoicePayment.Margin = new System.Windows.Forms.Padding(1);
             this.btnInvoicePayment.Name = "btnInvoicePayment";
             this.btnInvoicePayment.Size = new System.Drawing.Size(149, 43);
             this.btnInvoicePayment.TabIndex = 53;
@@ -565,7 +566,7 @@
             // btnInvoiceDetails
             // 
             this.btnInvoiceDetails.Location = new System.Drawing.Point(9, 290);
-            this.btnInvoiceDetails.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnInvoiceDetails.Margin = new System.Windows.Forms.Padding(1);
             this.btnInvoiceDetails.Name = "btnInvoiceDetails";
             this.btnInvoiceDetails.Size = new System.Drawing.Size(149, 43);
             this.btnInvoiceDetails.TabIndex = 52;
@@ -575,7 +576,7 @@
             // btnInvoiceSummary
             // 
             this.btnInvoiceSummary.Location = new System.Drawing.Point(9, 244);
-            this.btnInvoiceSummary.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnInvoiceSummary.Margin = new System.Windows.Forms.Padding(1);
             this.btnInvoiceSummary.Name = "btnInvoiceSummary";
             this.btnInvoiceSummary.Size = new System.Drawing.Size(149, 43);
             this.btnInvoiceSummary.TabIndex = 51;
@@ -585,7 +586,7 @@
             // btnDailyCollection
             // 
             this.btnDailyCollection.Location = new System.Drawing.Point(9, 199);
-            this.btnDailyCollection.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnDailyCollection.Margin = new System.Windows.Forms.Padding(1);
             this.btnDailyCollection.Name = "btnDailyCollection";
             this.btnDailyCollection.Size = new System.Drawing.Size(149, 43);
             this.btnDailyCollection.TabIndex = 50;
@@ -595,7 +596,7 @@
             // btnSalesCollection
             // 
             this.btnSalesCollection.Location = new System.Drawing.Point(9, 154);
-            this.btnSalesCollection.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnSalesCollection.Margin = new System.Windows.Forms.Padding(1);
             this.btnSalesCollection.Name = "btnSalesCollection";
             this.btnSalesCollection.Size = new System.Drawing.Size(149, 43);
             this.btnSalesCollection.TabIndex = 49;
@@ -605,7 +606,7 @@
             // btnReferenceSales
             // 
             this.btnReferenceSales.Location = new System.Drawing.Point(9, 380);
-            this.btnReferenceSales.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnReferenceSales.Margin = new System.Windows.Forms.Padding(1);
             this.btnReferenceSales.Name = "btnReferenceSales";
             this.btnReferenceSales.Size = new System.Drawing.Size(149, 43);
             this.btnReferenceSales.TabIndex = 58;
@@ -615,7 +616,7 @@
             // btnProductSales
             // 
             this.btnProductSales.Location = new System.Drawing.Point(9, 426);
-            this.btnProductSales.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnProductSales.Margin = new System.Windows.Forms.Padding(1);
             this.btnProductSales.Name = "btnProductSales";
             this.btnProductSales.Size = new System.Drawing.Size(149, 43);
             this.btnProductSales.TabIndex = 57;
@@ -625,7 +626,7 @@
             // btnSalesReturn
             // 
             this.btnSalesReturn.Location = new System.Drawing.Point(9, 516);
-            this.btnSalesReturn.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnSalesReturn.Margin = new System.Windows.Forms.Padding(1);
             this.btnSalesReturn.Name = "btnSalesReturn";
             this.btnSalesReturn.Size = new System.Drawing.Size(149, 43);
             this.btnSalesReturn.TabIndex = 56;
@@ -635,7 +636,7 @@
             // btnHourlySales
             // 
             this.btnHourlySales.Location = new System.Drawing.Point(9, 562);
-            this.btnHourlySales.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnHourlySales.Margin = new System.Windows.Forms.Padding(1);
             this.btnHourlySales.Name = "btnHourlySales";
             this.btnHourlySales.Size = new System.Drawing.Size(149, 43);
             this.btnHourlySales.TabIndex = 55;
@@ -645,7 +646,7 @@
             // btnViewInvoice
             // 
             this.btnViewInvoice.Location = new System.Drawing.Point(9, 471);
-            this.btnViewInvoice.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnViewInvoice.Margin = new System.Windows.Forms.Padding(1);
             this.btnViewInvoice.Name = "btnViewInvoice";
             this.btnViewInvoice.Size = new System.Drawing.Size(149, 43);
             this.btnViewInvoice.TabIndex = 54;
@@ -655,7 +656,7 @@
             // btnSalesCommision
             // 
             this.btnSalesCommision.Location = new System.Drawing.Point(588, 244);
-            this.btnSalesCommision.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnSalesCommision.Margin = new System.Windows.Forms.Padding(1);
             this.btnSalesCommision.Name = "btnSalesCommision";
             this.btnSalesCommision.Size = new System.Drawing.Size(149, 43);
             this.btnSalesCommision.TabIndex = 61;
@@ -665,7 +666,7 @@
             // btnProductMovement
             // 
             this.btnProductMovement.Location = new System.Drawing.Point(588, 199);
-            this.btnProductMovement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnProductMovement.Margin = new System.Windows.Forms.Padding(1);
             this.btnProductMovement.Name = "btnProductMovement";
             this.btnProductMovement.Size = new System.Drawing.Size(149, 43);
             this.btnProductMovement.TabIndex = 60;
@@ -675,7 +676,7 @@
             // btnCancelledInvoice
             // 
             this.btnCancelledInvoice.Location = new System.Drawing.Point(588, 154);
-            this.btnCancelledInvoice.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnCancelledInvoice.Margin = new System.Windows.Forms.Padding(1);
             this.btnCancelledInvoice.Name = "btnCancelledInvoice";
             this.btnCancelledInvoice.Size = new System.Drawing.Size(149, 43);
             this.btnCancelledInvoice.TabIndex = 59;
@@ -711,7 +712,7 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "frmSalesReports";
             this.Text = "frmSalesReports";
             this.Load += new System.EventHandler(this.frmSalesReports_Load);

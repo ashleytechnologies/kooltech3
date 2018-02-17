@@ -79,5 +79,10 @@ namespace inventory
             generateInvoiceID();
             generateCustomerID();
         }
+
+        private void btnCloseIcon_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

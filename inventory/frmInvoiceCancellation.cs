@@ -58,5 +58,10 @@ namespace inventory
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
             this.Location = new Point(0, 0);
         }
+
+        private void btnCloseIcon_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
