@@ -18,14 +18,14 @@ namespace inventory
         public String TempFileNames2; 
         public static SqlConnection OpenConnection()
         {
-            SqlConnection sqlConn = new SqlConnection("Data Source=MELISHA;Initial Catalog=kolltech;Integrated Security=True");
+            SqlConnection sqlConn = new SqlConnection("Data Source=MELISHA;Initial Catalog=koll;Integrated Security=True");
             sqlConn.Open();
             return sqlConn;
     }
 
         public static SqlConnection CloseConnection()
         {
-            SqlConnection sqlConn = new SqlConnection("Data Source=MELISHA;Initial Catalog=kolltech;Integrated Security=True");
+            SqlConnection sqlConn = new SqlConnection("Data Source=MELISHA;Initial Catalog=koll;Integrated Security=True");
             sqlConn.Close();
             return sqlConn;
         }
