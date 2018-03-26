@@ -238,39 +238,6 @@
     <EmbeddedResource Include="frmStockAdjustment.resx">
       <DependentUpon>frmStockAdjustment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="obj\Debug\inventory.frmAddEditProduct.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmAddEditStaff.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmAddProductQuick.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmBarcode.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmBilling.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmCreditSettlement.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmCustomers.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmDebtors.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmGoodsReceived.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmGoodsReturn.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmHome.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmImportProduct.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmInvoice.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmInvoiceCancellation.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmListCategory.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmListofTransactions.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmListProduct.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmListProductStocksIn.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmListReturns.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmListStaff.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmLogin.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmMain.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmPayments.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmProduct.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmReceipts.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmReports.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmSalesReports.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmSalesReturn.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmSelectCategory.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmStock.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmStockAdjustment.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.frmSuppliers.resources" />
-    <EmbeddedResource Include="obj\Debug\inventory.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -288,12 +255,6 @@
     <None Include=".vs\inventory\v15\Server\sqlite3\storage.ide-wal" />
     <None Include="app.config" />
     <None Include="bin\Debug\inventory.exe.config" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\Debug\inventory.csproj.CopyComplete" />
-    <None Include="obj\Debug\inventory.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\inventory.csproj.GenerateResource.Cache" />
-    <None Include="obj\Debug\inventory.csprojResolveAssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -325,9 +286,6 @@
     <Content Include="images\mini.png" />
     <Content Include="images\minimize.png" />
     <Content Include="images\minimm.png" />
-    <Content Include="obj\Debug\inventory.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\inventory.exe" />
-    <Content Include="obj\Debug\inventory.pdb" />
     <Content Include="obj\Debug\TempPE\inventorydbDataSet.Designer.cs.dll" />
     <Content Include="obj\Debug\TempPE\inventorydbDataSet1.Designer.cs.dll" />
   </ItemGroup>
