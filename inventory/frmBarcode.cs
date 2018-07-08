@@ -57,13 +57,18 @@ namespace inventory
 
         private void frmBarcode_Load(object sender, EventArgs e)
         {
-            this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
-            this.Location = new Point(0, 0);
+           // this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+            //this.Location = new Point(0, 0);
         }
 
         private void btnCloseIcon_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

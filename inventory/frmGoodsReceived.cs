@@ -27,5 +27,10 @@ namespace inventory
         {
             this.Close();
         }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

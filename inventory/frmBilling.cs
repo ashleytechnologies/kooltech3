@@ -84,5 +84,40 @@ namespace inventory
         {
             this.Close();
         }
+
+        private void txtTotalAmount_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void txtContactNo_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void Label7_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void cmbPaymentMode_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void Label10_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void Label24_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void Label8_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,5 +29,20 @@ namespace inventory
         {
             this.Close();
         }
+
+        private void Label31_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label35_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label34_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
